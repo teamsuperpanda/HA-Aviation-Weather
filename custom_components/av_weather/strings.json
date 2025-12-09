@@ -1,0 +1,40 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Aviation Weather Setup",
+        "description": "Configure your aviation weather sensors. Enter one or more ICAO airport codes (comma-separated for multiple airports). Weather data is fetched once during setup, then updated using the av_weather.update_weather service call.",
+        "data": {
+          "icao_codes": "Airport ICAO Codes",
+          "feeds": "Data Feeds"
+        },
+        "data_description": {
+          "icao_codes": "Enter 4-letter ICAO airport codes, comma-separated (e.g., NZAA, KLAX, EGLL)",
+          "feeds": "Choose which weather reports to fetch (METAR for current conditions, TAF for forecasts)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to AviationWeather.gov",
+      "invalid_auth": "Invalid authentication",
+      "unknown": "An unknown error occurred"
+    },
+    "abort": {
+      "already_configured": "This set of airports is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Aviation Weather Settings",
+        "description": "Update weather data settings. Use the av_weather.update_weather service to manually fetch new data. To change which airports you monitor, please remove this integration and add a new one.",
+        "data": {
+          "feeds": "Data Feeds"
+        },
+        "data_description": {
+          "feeds": "Choose which weather reports to fetch (METAR for current conditions, TAF for forecasts)"
+        }
+      }
+    }
+  }
+}

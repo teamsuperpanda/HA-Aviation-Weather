@@ -1,0 +1,22 @@
+update_weather:
+  name: Update Weather
+  description: Manually fetch the latest METAR and/or TAF data for configured airports
+  fields:
+    icao_code:
+      name: ICAO Code
+      description: Specific airport ICAO code to update (optional - if not provided, all airports will be updated)
+      example: "NZAA"
+      required: false
+      selector:
+        text:
+    feed_type:
+      name: Feed Type
+      description: Type of weather data to fetch (optional - if not provided, all configured feed types will be updated)
+      required: false
+      selector:
+        select:
+          options:
+            - label: "METAR (Current Conditions)"
+              value: "METAR"
+            - label: "TAF (Forecast)"
+              value: "TAF"

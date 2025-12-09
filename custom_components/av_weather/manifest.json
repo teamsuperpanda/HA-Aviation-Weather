@@ -1,0 +1,11 @@
+{
+  "domain": "av_weather",
+  "name": "Av Weather",
+  "codeowners": ["@teamsuperpanda"],
+  "config_flow": true,
+  "documentation": "https://github.com/teamsuperpanda/HA-Aviation-Weather",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/teamsuperpanda/HA-Aviation-Weather/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}
